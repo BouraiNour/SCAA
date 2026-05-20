@@ -110,6 +110,7 @@ SCAA/
 └── README.md
 ```
 # Citation
+```bibtex
 
 @article{yourname2026preserving,
   title={Preserving Diagnosis, Reducing Bits: Sparsity-Controlled Linear Anatomical Attention for Medical Image Compression},
@@ -117,6 +118,8 @@ SCAA/
   journal={Signal, Image and Video Processing},
   year={2026}
 }
+```
+```bibtex
 
 @dataset{nourbourai_luna16-dp2d,
   author       = {Nour El Houda Bourai},
@@ -126,6 +129,7 @@ SCAA/
   doi          = {10.5281/zenodo.20314843},
   url          = {https://doi.org/10.5281/zenodo.20314843}
 }
+```
 
 # Acknowledgments
 We thank the LUNA16 challenge organisers for the original CT data.
