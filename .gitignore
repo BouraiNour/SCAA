@@ -1,0 +1,38 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Training outputs (checkpoints, logs, viz are generated; don't commit them)
+training_output/
+checkpoints/
+logs/
+visualizations/
+*.pth
+*.pt
+*.ckpt
+
+# Data folder (users download dataset separately)
+data/
+*.zip
+*.zip.*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE / editor config
+.vscode/
+.idea/
+
+# Custom config (if you have local overrides)
+configs/local_config.json
+*.local.yaml
