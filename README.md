@@ -62,19 +62,27 @@ pip install -r requirements.txt
 # Quick Start
 
 ## 1. Clone & install
+```python
+
 git clone https://github.com/YourUsername/luna16-diagnostic-compression.git
 cd luna16-diagnostic-compression
 pip install -r requirements.txt
-
+```
 ## 2. Download dataset
+```python
+
 huggingface-cli download nourbourai/luna16-dp2d --repo-type dataset --local-dir data/
-
+```
 ## 3. Train
+```python
+
 python train.py --config configs/default_config.json
-
+```
 ## 4. Evaluate
-python evaluate.py --checkpoint training_output/checkpoints/best_model.pth --data_dir data/
+```python
 
+python evaluate.py --checkpoint training_output/checkpoints/best_model.pth --data_dir data/
+```
 # Repository Structure
 
 SCAA/
