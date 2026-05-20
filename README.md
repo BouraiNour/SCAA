@@ -11,7 +11,7 @@ Authors: [Your Name], [Co‑authors]
 
 ---
 
-## 🔬 Abstract
+## Abstract
 
 The compression of medical images demands both aggressive bitrate reduction and the faithful reconstruction of diagnostically critical structures. Standard codecs allocate bits uniformly, ignoring clinical salience, while region‑of‑interest methods require external segmentation annotations. We introduce the \textbf{Sparsity-Controlled Anatomical Attention (SCAA)} framework: a self‑supervised mechanism that learns to prioritise anatomically significant regions during compression without manual labels. SCAA couples a \emph{SparsityPriorGenerator} (producing soft organ‑attention maps via a learnable temperature) with a linear‑complexity \emph{AnatomicalAttention} block that conditions latent feature routing, achieving $\mathcal{O}(Ld^{2})$ complexity – about three orders of magnitude lower than standard self‑attention. 
 
@@ -19,7 +19,7 @@ Evaluated on a dedicated 2D CT dataset derived from LUNA16 ($6\,216$ axial slice
 
 ---
 
-## 📦 Dataset: LUNA16‑DP2D
+## Dataset: LUNA16‑DP2D
 
 We release the **LUNA16‑DiagnosticPreservation‑2D** dataset, derived from the LUNA16 challenge:
 
@@ -36,7 +36,7 @@ We release the **LUNA16‑DiagnosticPreservation‑2D** dataset, derived from th
 
 ---
 
-## 🧠 Method Overview
+## Method Overview
 
 ### Sparsity‑Controlled Linear Anatomical Attention
 1. **Sparsity Prior Generator**: produces K soft organ masks via a learnable temperature‑scaled sigmoid. High temperature → near‑binary, sparse masks.
@@ -50,7 +50,7 @@ We release the **LUNA16‑DiagnosticPreservation‑2D** dataset, derived from th
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 - Python ≥ 3.10
 - PyTorch ≥ 2.0
@@ -58,7 +58,7 @@ We release the **LUNA16‑DiagnosticPreservation‑2D** dataset, derived from th
 
 ```bash
 pip install -r requirements.txt
-
+```
 # Quick Start
 
 ## 1. Clone & install
