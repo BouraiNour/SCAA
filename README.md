@@ -13,9 +13,9 @@ Authors: [Your Name], [Co‑authors]
 
 ## Abstract
 
-The compression of medical images demands both aggressive bitrate reduction and the faithful reconstruction of diagnostically critical structures. Standard codecs allocate bits uniformly, ignoring clinical salience, while region‑of‑interest methods require external segmentation annotations. We introduce the \textbf{Sparsity-Controlled Anatomical Attention (SCAA)} framework: a self‑supervised mechanism that learns to prioritise anatomically significant regions during compression without manual labels. SCAA couples a \emph{SparsityPriorGenerator} (producing soft organ‑attention maps via a learnable temperature) with a linear‑complexity \emph{AnatomicalAttention} block that conditions latent feature routing, achieving $\mathcal{O}(Ld^{2})$ complexity – about three orders of magnitude lower than standard self‑attention. 
+The compression of medical images demands both aggressive bitrate reduction and the faithful reconstruction of diagnostically critical structures. Standard codecs allocate bits uniformly, ignoring clinical salience, while region‑of‑interest methods require external segmentation annotations. We introduce the **Sparsity-Controlled Anatomical Attention (SCAA)** framework: a self‑supervised mechanism that learns to prioritise anatomically significant regions during compression without manual labels. SCAA couples a \emph{SparsityPriorGenerator} (producing soft organ‑attention maps via a learnable temperature) with a linear‑complexity **AnatomicalAttention** block that conditions latent feature routing, achieving $\mathcal{O}(Ld^{2})$ complexity – about three orders of magnitude lower than standard self‑attention. 
 
-Evaluated on a dedicated 2D CT dataset derived from LUNA16 ($6\,216$ axial slices, patient‑level split), our full compression pipeline attains \textbf{29.84 dB PSNR at 0.310 bpp} (SSIM 0.9695, LPIPS 0.052). The spatial bitrate–organ correlation reaches 0.188, confirming that bits are preferentially allocated to anatomically attended regions. These results establish SCAA as a computationally efficient, annotation‑free alternative to supervision‑dependent ROI coding for medical image compression.
+Evaluated on a dedicated 2D CT dataset derived from LUNA16 ($6\,216$ axial slices, patient‑level split), our full compression pipeline attains29.84 dB PSNR at 0.310 bpp (SSIM 0.9695, LPIPS 0.052). The spatial bitrate–organ correlation reaches 0.188, confirming that bits are preferentially allocated to anatomically attended regions. These results establish SCAA as a computationally efficient, annotation‑free alternative to supervision‑dependent ROI coding for medical image compression.
 
 ---
 
@@ -69,6 +69,14 @@ cd luna16-diagnostic-compression
 pip install -r requirements.txt
 ```
 ## 2. Download dataset
+
+### 2. Download the dataset
+
+**Option A – Using the provided script**
+```bash
+cd data && bash download.sh
+```
+**Option B – Direct download from HuggingFace**
 ```python
 
 huggingface-cli download nourbourai/luna16-dp2d --repo-type dataset --local-dir data/
