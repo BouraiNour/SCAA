@@ -84,7 +84,7 @@ python train.py --config configs/default_config.json
 python evaluate.py --checkpoint training_output/checkpoints/best_model.pth --data_dir data/
 ```
 # Repository Structure
-
+```text
 SCAA/
 ├── configs/
 │   └── default_config.json
@@ -108,7 +108,7 @@ SCAA/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
-
+```
 # Citation
 
 @article{yourname2026preserving,
