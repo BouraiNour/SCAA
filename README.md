@@ -112,7 +112,7 @@ SCAA/
 # Citation
 ```bibtex
 
-@article{yourname2026preserving,
+@article{NEHBourai2026preserving,
   title={Preserving Diagnosis, Reducing Bits: Sparsity-Controlled Linear Anatomical Attention for Medical Image Compression},
    author = {Nour El Houda Bourai,  Hayet Farida Merouani,  Akila Djebbar},
   journal={Signal, Image and Video Processing},
